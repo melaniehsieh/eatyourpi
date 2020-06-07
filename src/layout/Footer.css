@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+p {
+  color: #adacb1;
+  font-size: 20px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa {
+  color: #848387;
+}
+
+.fa:hover {
+  cursor: pointer;
+  color: #0085a5;
+}

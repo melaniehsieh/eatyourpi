@@ -1,0 +1,58 @@
+.cardsContainer {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 40%;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.author p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: black 2px solid;
+  border-radius: 15px;
+  margin-top: 3%;
+  text-align: left;
+}
+
+a {
+  color: black;
+  font-size: 30px;
+}
+
+p {
+  font-size: 25px;
+  color: black;
+  font-weight: lighter;
+}
+
+.cardsContainer img {
+  border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardsContainer {
+    justify-content: center;
+    align-items: center;
+  }
+}
