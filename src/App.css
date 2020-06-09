@@ -1,26 +1,10 @@
-* {
+*,
+body {
   font-family: "Open Sans", sans-serif;
+  background-color: #f7f7f7;
 }
 
 .app {
+  margin-top: 3%;
   text-align: center;
-  background-color: #fff;
-}
-
-.title {
-  color: black;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff6c6c;
-  text-decoration: none;
-}
-
-.news {
-  margin: 3%;
 }

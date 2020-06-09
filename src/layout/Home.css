@@ -1,0 +1,62 @@
+.input {
+  margin-top: 22px;
+}
+
+.input_value {
+  width: 50%;
+  padding: 15px 0px 15px 30px;
+  font: 500 30px "Open Sans", sans-serif;
+  background-color: #f7f7f7;
+  border: #f7f7f7 solid 1px;
+  border-radius: 53px;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%),
+    -9px -9px 9px 0 rgb(255, 255, 255, 100%);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 30%),
+  -9px -9px 9px 0 rgb(255, 255, 255, 100%);}
+
+.input_group {
+  width: 43%;
+  padding: 15px 0px 15px 30px;
+  font: 500 30px "Open Sans", sans-serif;
+  background-color: #f7f7f7;
+  border: #f7f7f7 solid 1px;
+  border-radius: 53px;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%),
+  -9px -9px 9px 0 rgb(255, 255, 255, 100%);}
+
+.add {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  color: #0085a5;
+  background-color: #fff;
+  border-radius: 50%;
+  border: white solid 1px;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%);
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 30%);
+}
+
+button {
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  color: #0085a5;
+  background-color: #fff;
+  border-radius: 10px;
+  border: white solid 1px;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%);
+  margin-top: 70px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import axios from "axios";
+import pie from "../pie1.png";
 
 class Display extends Component {
   state = {
@@ -36,7 +37,6 @@ class Display extends Component {
       )
       .then((res) => {
         const articles = res.data.articles;
-        console.log(articles);
 
         this.setState({ articles: articles });
       })
@@ -50,15 +50,17 @@ class Display extends Component {
       <div className="cardsContainer">
         {this.state.articles.map((news, i) => {
           return (
-            <Card>
-              <Card.Img className="image" src={news.urlToImage} />
-              <Card.Body>
-                <h3>
-                  <a href={news.url} target="_blank" rel="noopener noreferrer">
-                    {news.title}
-                  </a>
-                </h3>
-                <p>{news.description}</p>
+            <div className="card">
+              {news.urlToImage ? (
+                <Card.Img className="image" src={news.urlToImage} />
+              ) : (
+                <Card.Img className="image" src={pie} />
+              )}
+              <Card.Body className="card_body">
+                <a href={news.url} target="_blank" rel="noopener noreferrer">
+                  {news.title}
+                </a>
+                <p className="desc">{news.description}</p>
                 <div className="author">
                   <p>
                     Author: {news.author ? news.author : this.props.default}
@@ -66,7 +68,7 @@ class Display extends Component {
                   <p>Published: {this.formatDate(news.publishedAt)}</p>
                 </div>
               </Card.Body>
-            </Card>
+            </div>
           );
         })}
       </div>

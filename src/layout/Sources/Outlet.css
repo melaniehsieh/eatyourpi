@@ -2,79 +2,57 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2% 3% 0 0;
+  margin: 1% 5% 0 15%;
   border-radius: 15px;
-  padding: 10px;
-  width: 30%;
+  width: 25%;
   height: 10%;
-  border: black 3px solid;
+  padding: 2%;
+  background-color: #fff;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%);
 }
 
-.options {
-  margin: 3%;
+.outletSection:hover {
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 30%),
+    -9px -9px 9px 0 rgb(255, 255, 255, 100%);
 }
 
-.generalInfo {
+.general {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 1%;
 }
 
-.generalInfo > * {
+.general > * {
   margin: 0 8px;
 }
 
-.flagCode {
+.flag {
   width: 32px;
   height: 20px;
 }
 
-.generalInfo a {
-  font-size: 25px;
-  color: #ffde22;
-}
-
-.generalInfo a:hover {
-  font-size: 25px;
-  color: #ff8f00;
-}
-
-.singleNew a {
+.context a {
   color: #000;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
 }
 
-.singleNew a:hover {
-  color: #ff6c6c;
-  font-size: 40px;
+.context a:hover {
+  font-size: 25px;
   font-weight: bold;
+  text-decoration: underline #ff6c6c;
 }
 
-.singleNew p {
+.context p {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
-  padding-left: 1%;
+  padding-top: 2%;
 }
 
-.generalInfo p {
+.general p {
   font-size: 25px;
   color: #0085a5;
   font-weight: bold;
-}
-
-h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
-  padding: 10px;
-  font-family: "Open Sans";
-  font-weight: 800;
-  color: black;
-}
-
-span {
-  color: #ff908b;
 }

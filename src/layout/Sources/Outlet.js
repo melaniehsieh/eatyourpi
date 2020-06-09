@@ -35,16 +35,14 @@ class Outlet extends Component {
         {this.state.data.map((item, y) => {
           if (item.id === this.state.value) {
             return (
-              <div key={y} className="singleNew">
-                <h4>
-                  <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
-                </h4>
-                <div className="generalInfo">
+              <div key={y} className="context">
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.name}
+                </a>
+                <div className="general">
                   <p>{item.country.toUpperCase()}</p>
                   <img
-                    className="flagCode"
+                    className="flag"
                     src={findFlag(item.country)}
                     alt="flag"
                   />
