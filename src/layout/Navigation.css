@@ -12,14 +12,14 @@ nav a:hover,
 nav a:focus,
 nav a:active {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 nav a {
   position: relative;
   display: block;
   color: #000;
-  font: italic 600 35px "Open Sans", sans-serif;
+  font: italic 600 30px "Open Sans", sans-serif;
 }
 
 nav a::before {
@@ -30,7 +30,7 @@ nav a::before {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #ff6c6c;
+  background-color: #fff;
   transform-origin: right top;
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;

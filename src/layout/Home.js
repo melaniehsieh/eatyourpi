@@ -6,25 +6,27 @@ import { Link } from "react-router-dom";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="box">
         <div className="input">
+          <h3>Title</h3>
           <input
             type="text"
             className="input_value"
-            placeholder="Title:"
+            placeholder="Enter a title…"
             name="title"
           />
         </div>
-        <div className="input input_bar">
+        <div className="input">
+          <h3>Tags</h3>
           <input
             type="text"
-            className="input_group"
-            placeholder="Tags:"
+            className="input_value"
+            placeholder="Enter tags…"
             name="tags"
           />
           <button className="add">+</button>
         </div>
-        <button>Search</button>
+        <button className="search">Search</button>
       </div>
     );
   }

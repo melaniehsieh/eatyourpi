@@ -7,13 +7,14 @@
   width: 25%;
   height: 10%;
   padding: 2%;
-  background-color: #fff;
-  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%);
+  background-color: #faba72;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%),
+    -9px -9px 20px 0 rgb(255, 255, 255, 17%);
 }
 
 .outletSection:hover {
   box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 30%),
-    -9px -9px 9px 0 rgb(255, 255, 255, 100%);
+    -9px -9px 20px 0 rgb(255, 255, 255, 17%);
 }
 
 .general {
@@ -35,13 +36,14 @@
 .context a {
   color: #000;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .context a:hover {
   font-size: 25px;
-  font-weight: bold;
-  text-decoration: underline #ff6c6c;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
 }
 
 .context p {
@@ -53,6 +55,6 @@
 
 .general p {
   font-size: 25px;
-  color: #0085a5;
-  font-weight: bold;
+  color: #000;
+  font-weight: 600;
 }
