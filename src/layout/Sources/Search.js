@@ -10,14 +10,10 @@ import "./Outlet.css";
 class Search extends Component {
   state = {
     data: [],
-    country: "",
-    category: "",
     value: "bbc-news",
   };
 
   handleChange = (event) => {
-    this.setState({ country: event.target.value });
-    this.setState({ category: event.target.value });
     this.setState({ value: event.target.value });
   };
 
@@ -32,95 +28,13 @@ class Search extends Component {
   }
 
   render() {
-    const countryList = [
-      "ae",
-      "ar",
-      "at",
-      "au",
-      "be",
-      "bg",
-      "br",
-      "ca",
-      "ch",
-      "cn",
-      "co",
-      "cu",
-      "cz",
-      "de",
-      "eg",
-      "fr",
-      "gb",
-      "gr",
-      "hk",
-      "hu",
-      "id",
-      "ie",
-      "il",
-      "in",
-      "it",
-      "jp",
-      "kr",
-      "lt",
-      "lv",
-      "ma",
-      "mx",
-      "my",
-      "ng",
-      "nl",
-      "no",
-      "nz",
-      "ph",
-      "pl",
-      "pt",
-      "ro",
-      "rs",
-      "ru",
-      "sa",
-      "se",
-      "sg",
-      "si",
-      "sk",
-      "th",
-      "tr",
-      "tw",
-      "ua",
-      "us",
-      "ve",
-      "za",
-    ];
-    const categoryList = [
-      "business",
-      "entertainment",
-      "general",
-      "health",
-      "science",
-      "sports",
-      "technology",
-    ];
     return (
       <div className="news">
-        <select value={this.state.country} onChange={this.handleChange}>
-          >
-          {countryList.map((outlet, i) => {
-            return (
-              <option key={i} value={outlet}>
-                {outlet}
-              </option>
-            );
-          })}
-        </select>
-        <select value={this.state.category} onChange={this.handleChange}>
-          >
-          {categoryList.map((outlet, i) => {
-            return (
-              <option key={i} value={outlet}>
-                {outlet}
-              </option>
-            );
-          })}
-        </select>
-        <select value={this.state.value} onChange={this.handleChange}>
-          >
+        <select
+          style={{ backgroundColor: "white", margin: "50px" }}
+          value={this.state.value}
+          onChange={this.handleChange}
+        >
           {this.state.data.map((outlet, i) => {
             return (
               <option key={i} value={outlet.id}>

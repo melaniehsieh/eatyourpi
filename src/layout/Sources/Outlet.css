@@ -7,14 +7,14 @@
   width: 25%;
   height: 10%;
   padding: 2%;
-  background-color: #faba72;
-  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 17%),
-    -9px -9px 20px 0 rgb(255, 255, 255, 17%);
+  background-color: #baf2ff;
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 40%),
+    -9px -9px 20px 0 rgb(255, 255, 255, 20%);
 }
 
 .outletSection:hover {
-  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 30%),
-    -9px -9px 20px 0 rgb(255, 255, 255, 17%);
+  box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 40%),
+    -9px -9px 20px 0 rgb(255, 255, 255, 30%);
 }
 
 .general {
@@ -31,6 +31,10 @@
 .flag {
   width: 32px;
   height: 20px;
+}
+
+.context, .general {
+  background-color: #baf2ff;
 }
 
 .context a {
@@ -51,10 +55,12 @@
   font-size: 18px;
   text-align: left;
   padding-top: 2%;
+  background-color: #baf2ff;
 }
 
 .general p {
   font-size: 25px;
   color: #000;
   font-weight: 600;
+  background-color: #baf2ff;
 }
